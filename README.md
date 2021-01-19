@@ -23,11 +23,9 @@ A partir du dossier de code fourni, réalisez les éléments suivants, en respec
 Technologies à utiliser : Html5 / Bootstrap / Node JS / Express / Ejs / JSON.
 
 ## Modalités pédagogiques
-Travail individuel.
-
-A rendre avant jeudi soir minuit.
-
-Technologies à utiliser : Html5 / Bootstrap / Node JS / Express / Ejs / JSON.
+* Travail individuel.
+* A rendre avant jeudi soir minuit.
+* Technologies à utiliser : Html5 / Bootstrap / Node JS / Express / Ejs / JSON.
 
 ## Critères de performance
 * La page d'accueil affiche toutes les informations souhaitées par le client. Basez vous sur la bibliothèque de votre commune, ou la plus proche.
@@ -41,6 +39,6 @@ Technologies à utiliser : Html5 / Bootstrap / Node JS / Express / Ejs / JSON.
 ## Modalités d'évaluation
 Revue de code avec le formateur.
 
-Livrables
-Dépôt gitlab. Site en ligne sur Heroku.
-
+## Livrables
+* Dépôt gitlab.
+* Site en ligne sur Heroku.

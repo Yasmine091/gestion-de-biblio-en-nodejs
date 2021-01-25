@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<head>
+    <%- include('../partials/head'); %>
+</head>
+
+<body>
+
+    <header>
+        <%- include('../partials/navbar'); %>
+    </header>
+
+    <main class="container pb-5">
+        <h1 class="text-center">Livres</h1>
+        <h2>Liste des CD's :</h2>
+        <div class="row">
+            <% cdDB.forEach((cd) => { %>
+            <div class="card m-2 p-1" style="width: 18rem;">
+                <img src="<%= cd.thumbnail_url %>" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="h5 card-title"><%= cd.name %></h3>
+                    <p class="card-text"><%= cd.info.substring(0,250); %>...</p>
+                    <a href="/cd/<%= cd.id %>" class="btn btn-primary">En savoir plus</a>
+                </div>
+            </div>
+            <% }); %>
+        </div>
+    </main>
+
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+
+</body>
+
+</html>

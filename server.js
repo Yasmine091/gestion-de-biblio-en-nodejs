@@ -12,6 +12,9 @@ app.set('view engine', 'ejs');
 let rawdataDB = fs.readFileSync('data/books_db.json');
 let bookDB = JSON.parse(rawdataDB);
 
+let rawdata2DB = fs.readFileSync('data/cds_db.json');
+let cdDB = JSON.parse(rawdata2DB);
+
 // index page
 app.get('/', (req, res) => {
     res.render('pages/index');
@@ -26,6 +29,18 @@ app.get('/books', (req, res) => {
 
 // book detail page
 app.get('/book/:id', (req, res) => {
+    console.log(req.params.id)
+});
+
+// cds page
+app.get('/cds', (req, res) => {
+    res.render('pages/cds', {
+        cdDB: cdDB.cds
+    });
+});
+
+// cd detail page
+app.get('/cd/:id', (req, res) => {
     console.log(req.params.id)
 });
 

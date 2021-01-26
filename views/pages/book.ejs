@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr" class="h-100">
-
+    
 <head>
     <%- include('../partials/head'); %>
 </head>
@@ -12,19 +12,17 @@
     </header>
 
     <main class="container pb-5">
-        <h1 class="text-center">Livres</h1>
-        <h2>Liste des livres :</h2>
+        <h1 class="text-center">Livre</h1>
         <div class="row mx-auto">
-            <% bookDB.forEach((book) => { %>
-            <div class="card m-2 p-1" style="width: 20rem;">
-                <img src="<%= book.thumbnail_url %>" class="card-img-top" alt="...">
+            <% bookDB.forEach((book) => { if(book.id == bookID){ %>
+            <div class="card m-2 p-1 col">
+                <img src="<%= book.thumbnail_url %>" class="card-img-top" style="width: 18rem; height: 100%;" alt="...">
                 <div class="card-body">
                     <h3 class="h5 card-title"><%= book.name %></h3>
-                    <p class="card-text"><%= book.info.substring(0,250); %>...</p>
-                    <a href="/book/<%= book.id %>" class="btn btn-dark">En savoir plus</a>
+                    <p class="card-text"><%= book.info %></p>
                 </div>
             </div>
-            <% }); %>
+            <% }}); %>
         </div>
     </main>
 

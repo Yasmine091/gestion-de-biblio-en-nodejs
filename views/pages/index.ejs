@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="fr" class="h-100">
 
 <head>
     <%- include('../partials/head'); %>
@@ -13,7 +14,68 @@
     <main class="container pb-5">
         <!-- Completer la page Index -->
         <h1 class="text-center">Accueil</h1>
-        <p></p>
+        <div class="row mx-auto">
+            <div class="card m-2 p-1 col-3">
+                <div class="card-body">
+                    <h3 class="h5 card-title">Horaires</h3>
+                    <p class="card-text">
+                    <ul>
+                        <li>Lundi : 9h15 - 18h45</li>
+                        <li>Mardi : 9h15 - 18h45</li>
+                        <li>Mercredi : 10h15 - 17h45</li>
+                        <li>Jeudi : 9h15 - 18h45</li>
+                        <li>Vendredi : 9h15 - 18h45</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="card m-2 p-1 col">
+                <div class="card-body">
+                    <h3 class="h5 card-title">Abonnement</h3>
+                    <p class="card-text">
+                        <table class="table">
+                            <thead class="thead thead-dark">
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Mineurs</th>
+                                    <th scope="col">18 à 27</th>
+                                    <th scope="col">Tous publiques</th>
+                                    <th scope="col">65 ans</th>
+                                  </tr>
+                            </thead>
+                            <tbody class="table table-striped">
+                              <tr>
+                                <th scope="row">Emprunts</th>
+                                <td>5€</td>
+                                <td>10€</td>
+                                <td>10€</td>
+                                <td>10€</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Inscriptions</th>
+                                <td>Gratuit</td>
+                                <td>8€ (tarif réduit)<br>
+                                    17€ (tarif plein)</td>
+                                <td>8€ (tarif réduit)<br>
+                                    17€ (tarif plein)</td>
+                                <td>Gratuit</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row mx-auto">
+            <div class="card m-2 p-1 col">
+                <div class="card-body">
+                    <h3 class="h5 card-title">Adresse</h3>
+                    <p class="card-text">
+                        1 allée de BootStrap, 31500 Node.
+                    </p>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>

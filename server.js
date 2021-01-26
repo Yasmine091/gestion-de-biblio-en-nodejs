@@ -29,7 +29,10 @@ app.get('/books', (req, res) => {
 
 // book detail page
 app.get('/book/:id', (req, res) => {
-    console.log(req.params.id)
+    res.render('pages/book', {
+    bookID: req.params.id,
+    bookDB: bookDB.books
+    });
 });
 
 // cds page
@@ -41,7 +44,10 @@ app.get('/cds', (req, res) => {
 
 // cd detail page
 app.get('/cd/:id', (req, res) => {
-    console.log(req.params.id)
+    res.render('pages/cd', {
+    cdID: req.params.id,
+    cdDB: cdDB.cds
+    });
 });
 
 // about page
